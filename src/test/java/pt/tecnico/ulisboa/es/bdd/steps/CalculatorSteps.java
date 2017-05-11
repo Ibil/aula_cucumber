@@ -34,4 +34,15 @@ public class CalculatorSteps {
     public void the_result_should_be(int result) throws Throwable {
         assertEquals(result, calculator.getResult());
     }
+
+    @Then("^the result will be (\\d+)$")
+    public void the_result_will_be(int arg1) throws Throwable {
+        assertEquals(arg1, calculator.getResult());
+    }
+
+    @Then("^the result is (\\d+)$")
+    public void the_result_is(int arg1) throws Throwable {
+        assertEquals(arg1, calculator.getResult());
+    }
+
 }
